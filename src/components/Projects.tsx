@@ -92,7 +92,7 @@ const FeaturedProjects = () => {
     <section id="projects" className="bg-tech-navy py-20">
       <div className="section-container">
         <h2 className="section-title text-tech-lightest">
-          <span className="text-tech-teal font-mono">03.</span> Featured Projects
+          Featured Projects
         </h2>
         
         <div className="mt-16">

@@ -8,7 +8,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="w-full md:w-3/5">
             <h2 className="section-title text-tech-lightest">
-              <span className="text-tech-teal font-mono">01.</span> About Me
+              About Me
             </h2>
             
             <div className="space-y-4 text-tech-light">

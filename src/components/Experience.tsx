@@ -142,7 +142,7 @@ const Experience = () => {
     <section id="experience" className="bg-tech-blue py-20">
       <div className="section-container">
         <h2 className="section-title text-tech-lightest">
-          <span className="text-tech-teal font-mono">04.</span> Work Experience
+          Work Experience
         </h2>
         
         <Tabs defaultValue="all" className="mt-12">
