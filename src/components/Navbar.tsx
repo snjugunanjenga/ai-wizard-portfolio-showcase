@@ -36,20 +36,19 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
-            <a href="#" className="text-tech-teal font-mono font-bold text-xl">Simon.dev</a>
+            <a href="#" className="text-tech-teal font-mono font-bold text-xl">SimonNjenga</a>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
-              {navItems.map((item, index) => (
+              {navItems.map((item) => (
                 <a 
                   key={item.name}
                   href={item.href}
                   className="text-tech-lightest hover:text-tech-teal font-mono text-sm transition-colors"
-                  style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <span className="text-tech-teal">0{index + 1}.</span> {item.name}
+                  {item.name}
                 </a>
               ))}
               <Button className="btn-primary font-mono">Resume</Button>
@@ -71,14 +70,14 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'fixed inset-0 bg-tech-blue/95 backdrop-blur-md z-50 flex items-center justify-center' : 'hidden'}`}>
         <div className="flex flex-col items-center space-y-8 p-8">
-          {navItems.map((item, index) => (
+          {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
               onClick={() => setIsOpen(false)}
               className="text-tech-lightest hover:text-tech-teal text-xl font-mono"
             >
-              <span className="text-tech-teal">0{index + 1}.</span> {item.name}
+              {item.name}
             </a>
           ))}
           <Button onClick={() => window.open('/resume.pdf')} className="btn-primary mt-4">Resume</Button>
