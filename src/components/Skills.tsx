@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { 
   Code, Database, LineChart, BarChart, Cloud, 
@@ -24,7 +24,7 @@ const SkillCategory = ({
       {skills.map((skill, index) => (
         <Badge
           key={index}
-          className="tech-tag"
+          className="bg-tech-navy text-tech-lightest hover:bg-tech-teal hover:text-tech-navy px-3 py-1 rounded-full text-sm font-mono transition-colors"
           variant="outline"
         >
           {skill}
@@ -92,7 +92,7 @@ const Skills = () => {
     <section id="skills" className="bg-tech-blue py-20">
       <div className="section-container">
         <h2 className="section-title text-tech-lightest mb-12">
-          <span className="text-tech-teal font-mono">02.</span> My Expertise
+          My Expertise
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
