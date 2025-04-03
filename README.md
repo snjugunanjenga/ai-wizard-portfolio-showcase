@@ -1,26 +1,36 @@
-# Welcome to your Lovable project
+# AI Wizard Portfolio Showcase
 
-## Project info
+Welcome to the AI Wizard Portfolio Showcase! This repository hosts the source code for my personal portfolio—a project that highlights my expertise in Python, AI, Data Science, and Machine Learning. Whether you're here to explore my work or learn how the site was built, I hope you find it both engaging and inspiring.
 
-**URL**: https://lovable.dev/projects/e493bafa-f58b-47ed-9de3-dbfc8e9cce55
+## Live Demo
 
-## How can I edit this code?
+Experience the live version of the portfolio here:  
+[**https://ai-wizard-portfolio-showcase.vercel.app/**](https://ai-wizard-portfolio-showcase.vercel.app/)
 
-There are several ways of editing your application.
+## About the Project
 
-**Use Lovable**
+This web application is designed to present my professional journey and projects in the realms of Python programming, artificial intelligence, data science, and machine learning. The goal is to showcase my technical expertise and creative approach in an attractive, user-friendly format.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e493bafa-f58b-47ed-9de3-dbfc8e9cce55) and start prompting.
+## Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+The project is built with modern web technologies and tools, including:
 
-**Use your preferred IDE**
+- **Vite** – A fast and efficient build tool.
+- **TypeScript** – Ensuring type safety and maintainable code.
+- **React** – For building dynamic and interactive user interfaces.
+- **shadcn-ui** – Providing reusable and customizable UI components.
+- **Tailwind CSS** – Delivering a responsive and clean design.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+If you’d like to run the project locally or contribute to its development, follow these steps:
 
-Follow these steps:
+### Prerequisites
+
+- **Node.js & npm:** Make sure these are installed on your machine. (For an easy setup, consider using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+
+### Installation
+
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
@@ -36,31 +46,5 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e493bafa-f58b-47ed-9de3-dbfc8e9cce55) and click on Share -> Publish.
 

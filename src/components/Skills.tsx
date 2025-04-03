@@ -49,7 +49,7 @@ const Skills = () => {
     {
       icon: LineChart,
       title: "Data Science",
-      skills: ["Data Analysis", "Data Visualization", "Web Scraping", "Statistical Modeling", "Big Data", "Pandas", "NumPy"]
+      skills: ["Data Analysis", "Data Visualization", "Web Scraping", "Statistical Modeling", "Big Data", "Pandas", "NumPy", "SciPy", "Excel"]
     },
     {
       icon: Globe,
