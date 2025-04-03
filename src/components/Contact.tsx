@@ -6,6 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -28,22 +29,47 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+    // Initialize EmailJS with your user ID
+    // NOTE: You'll need to create an EmailJS account and replace these values
+    // with your actual Service ID, Template ID, and User ID
+    const serviceId = 'service_id'; // Replace with your service ID
+    const templateId = 'template_id'; // Replace with your template ID
+    const userId = 'user_id'; // Replace with your user ID
+    
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    };
+    
+    emailjs.send(serviceId, templateId, templateParams, userId)
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        
+        // Reset form fields
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      })
+      .catch((error) => {
+        console.error('Failed to send email:', error);
+        toast({
+          title: "Failed to send message",
+          description: "There was an error sending your message. Please try again later.",
+          variant: "destructive"
+        });
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-      
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
-      setIsSubmitting(false);
-    }, 1500);
   };
 
   const contactInfo = [
@@ -77,7 +103,7 @@ const Contact = () => {
     <section id="contact" className="bg-tech-navy py-20">
       <div className="section-container">
         <h2 className="section-title text-tech-lightest">
-          <span className="text-tech-teal font-mono">05.</span> Get In Touch
+          Get In Touch
         </h2>
         
         <div className="flex flex-col lg:flex-row gap-12 mt-12">
