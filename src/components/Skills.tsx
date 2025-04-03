@@ -54,7 +54,7 @@ const Skills = () => {
     {
       icon: Globe,
       title: "Web Development",
-      skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"]
+      skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design", "React.js" ]
     },
     {
       icon: Database,
@@ -79,12 +79,12 @@ const Skills = () => {
     {
       icon: PenTool,
       title: "Automation",
-      skills: ["Workflow Automation", "RPA", "ETL Processes", "Task Scheduling", "CI/CD"]
+      skills: ["Workflow Automation", "RPA", "ETL Processes", "Task Scheduling", "CI/CD", "RAG"]
     },
     {
       icon: Users,
       title: "Soft Skills",
-      skills: ["Problem Solving", "Team Leadership", "Project Management", "Communication", "Mentoring"]
+      skills: ["Problem Solving", "Brainstorming", "Team Leadership", "Project Management", "Communication", "Mentoring"]
     }
   ];
 
